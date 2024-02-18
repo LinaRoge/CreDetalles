@@ -35,7 +35,7 @@ body {
     "nosotros"
     "productos"
     "pie";
-  grid-template-rows: auto;
+  grid-template-columns: auto;
 }
 .nosotros {
   grid-area: nosotros;
@@ -104,6 +104,7 @@ button:hover {
   border: 3px dashed rgba(189, 83, 83, 0.623);
   opacity: 100%;
 }
+
 @media (min-width: 562px) {
   .menu ul {
     display: flex;
@@ -145,8 +146,8 @@ footer a {
   color: white;
 }
 footer {
-  width: 1200px;
   height: 80px;
+  width: 100%;
   background-color: rgba(189, 83, 83, 0.623);
   border: 3px solid rgb(43, 170, 53);
   border-radius: 10%;
