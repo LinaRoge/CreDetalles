@@ -1,0 +1,153 @@
+body {
+  background-color: rgb(238, 191, 226);
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu li {
+  padding: 2px;
+}
+
+.menu li img {
+  width: 40%;
+  opacity: 100%;
+  border-radius: 50%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  display: flex;
+  grid-area: menu;
+  background-image: url("../img/Rosas1.jpg");
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.grid-conteiner {
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "nosotros"
+    "productos"
+    "pie";
+  grid-template-rows: auto;
+}
+.nosotros {
+  grid-area: nosotros;
+  text-align: center;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-area: productos;
+  justify-content: center;
+}
+
+.productos img {
+  width: 220px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.productos img:hover {
+  width: 230px;
+  height: 310px;
+  opacity: 100%;
+}
+
+.titulo-precio {
+  text-align: center;
+  font-size: 20px;
+  border: 0px;
+}
+.titulo-precio h5 {
+  margin: 0px;
+  border: 0px;
+}
+button {
+  border-color: black;
+  background: darksalmon;
+  border-radius: 30%;
+  width: 50%;
+  margin: 5px;
+}
+
+button:hover {
+  border-color: rgb(243, 178, 178);
+  background: rgb(240, 239, 238);
+  color: rgb(243, 178, 178);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10%;
+  opacity: 70%;
+  border: 3px solid rgb(43, 170, 53);
+  background-color: rgba(189, 83, 83, 0.623);
+  transition: ease-out 1s;
+}
+
+.card:hover {
+  background-color: white;
+  border: 3px dashed rgba(189, 83, 83, 0.623);
+  opacity: 100%;
+}
+@media (min-width: 562px) {
+  .menu ul {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: end;
+    color: black;
+  }
+  .menu li {
+    padding: 10px;
+  }
+  .menu li img {
+    width: auto;
+    opacity: 80%;
+    animation: move 3s infinite;
+  }
+  .productos img {
+    border: 3px dashed rgb(43, 170, 53);
+  }
+}
+@keyframes move {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(20px);
+  }
+}
+
+.pie {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  margin: 5px;
+  color: white;
+}
+footer {
+  width: 1200px;
+  height: 80px;
+  background-color: rgba(189, 83, 83, 0.623);
+  border: 3px solid rgb(43, 170, 53);
+  border-radius: 10%;
+}
